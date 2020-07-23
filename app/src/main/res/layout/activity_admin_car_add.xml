@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorBG">
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@android:color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:fontFamily="sans-serif-light"
+                android:text="Add New Car"
+                android:textSize="28dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <EditText
+            android:id="@+id/carMake"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="500"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Make (e.g. Audi)" />
+
+        <EditText
+            android:id="@+id/carModel"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="500"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Model (e.g. A4)" />
+
+        <EditText
+            android:id="@+id/carYear"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="4"
+
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year (e.g. 2020)" />
+
+        <EditText
+            android:id="@+id/carColor"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="100"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Colour (e.g. Black)" />
+
+        <EditText
+            android:id="@+id/carSeats"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="2"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seats (e.g. 4)" />
+
+        <EditText
+            android:id="@+id/carRegNumber"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="100"
+            android:textAllCaps="true"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number Plate (e.g. LA51 ABC)" />
+
+        <EditText
+            android:id="@+id/carRate"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weekly Rate (e.g. £50)" />
+
+        <EditText
+            android:id="@+id/carLocation"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="1000"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup Location" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/nophoto" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/uploadPicture"
+                android:text="SET PICTURE"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/uploadCar"
+                android:text="ADD CAR"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

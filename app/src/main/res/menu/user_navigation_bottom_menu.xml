@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/user_navigation_booking"
+        android:icon="@drawable/logo_blue_trim"
+        android:title="Booking" />
+    <item
+        android:id="@+id/user_navigation_history"
+        android:icon="@drawable/history"
+        android:title="History" />
+    <item
+        android:id="@+id/user_navigation_feedback"
+        android:icon="@drawable/feedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/user_navigation_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/user_navigation_logout"
+        android:icon="@drawable/logout"
+        android:title="Sign Out" />
+</menu>
